@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Parameter extends Model
 {
     use HasFactory;
+    protected $table = "parameters";
+    protected $primaryKey = "idParameter";
 }
