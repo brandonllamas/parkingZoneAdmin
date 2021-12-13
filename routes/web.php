@@ -13,10 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 Route::get('/', [App\Http\Controllers\LoginController::class, 'index'])->name('home');
+Route::post('/', [App\Http\Controllers\LoginController::class, 'login'])->name('login');
 
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

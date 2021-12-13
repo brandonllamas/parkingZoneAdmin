@@ -19,13 +19,6 @@ class ParametersSeeder extends Seeder
         $parameter->name = "Tipo Usuarios";
         $parameter->save();
 
-        $parameter = new Parameter();
-        $parameter->name = "Ajustes Global";
-        $parameter->save();
-
-        $parameter = new Parameter();
-        $parameter->name = "Tipo taller";
-        $parameter->save();
 
         $parameter = new Parameter();
         $parameter->name = "Monedas";
