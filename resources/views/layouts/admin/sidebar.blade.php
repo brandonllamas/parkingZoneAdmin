@@ -13,11 +13,48 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item active">
-        <a class="nav-link" href="index.html">
+        <a class="nav-link" href="{{ route('dashboard') }}">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
 
+    <!-- Divider -->
+    <hr class="sidebar-divider">
+
+    <!-- Heading -->
+    <div class="sidebar-heading">
+        Modulos
+    </div>
+    <li class="nav-item active">
+        <a class="nav-link" href="#">
+            <i class="fas fa-user"></i>
+            <span>Usuarios</span></a>
+    </li>
+
+    <li class="nav-item active">
+        <a class="nav-link" href="#">
+            <i class="fas fa-store-alt"></i>
+            <span>Punto de parking</span></a>
+    </li>
+
+    <li class="nav-item active">
+        <a class="nav-link" href="#">
+            <i class="fas fa-map-marked-alt"></i>
+            <span>Zones</span></a>
+    </li>
+      <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+          Opciones
+      </div>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ route('logOut') }}">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Log out</span></a>
+    </li>
 
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">

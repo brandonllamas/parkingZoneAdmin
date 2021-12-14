@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Session;
 
 class LoginController extends Controller
@@ -49,5 +50,12 @@ class LoginController extends Controller
             Session::flash('message_error', "Usuario no existe");
             return redirect()->route('login');
         }
+    }
+
+    protected function getLogout()
+    {
+        Auth::logout();
+        Session::flush();
+        return Redirect::to('/');
     }
 }
