@@ -26,9 +26,9 @@
         Modulos
     </div>
     <li class="nav-item active">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="{{ route('cliente.index') }}">
             <i class="fas fa-user"></i>
-            <span>Usuarios</span></a>
+            <span>Clientes</span></a>
     </li>
 
     <li class="nav-item active">

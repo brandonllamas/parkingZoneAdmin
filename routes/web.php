@@ -26,7 +26,9 @@ Route::group(['prefix' => 'administrator', 'middleware' => 'auth'], function () 
     Route::group(['prefix' => ''], function () {
         Route::get('/',  [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('dashboard');
     });
-
+    Route::group(['prefix' => 'cliente'], function () {
+        Route::get('/',  [App\Http\Controllers\Admin\ClientController::class, 'index'])->name('cliente.index');
+    });
 
 
 });

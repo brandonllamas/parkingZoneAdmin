@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -22,6 +23,8 @@ class DatabaseSeeder extends Seeder
             ParameterValuesSeeder::class, // Valores parametros
             userSeed::class, //Usuarios
         ]);
+        User::factory(20)->create();
+
     }
 
     private function truncate(){
