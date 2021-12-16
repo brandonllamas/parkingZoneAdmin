@@ -42,6 +42,28 @@
             <i class="fas fa-map-marked-alt"></i>
             <span>Zones</span></a>
     </li>
+     <!-- Divider -->
+      <hr class="sidebar-divider">
+
+      <!-- Heading -->
+      <div class="sidebar-heading">
+          Informes
+      </div>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">
+            <i class="fas fa-map-marked-alt"></i>
+            <span>Informes</span></a>
+    </li>
+    <li class="nav-item active">
+        <a class="nav-link" href="#">
+            <i class="fas fa-map-marked-alt"></i>
+            <span>Estadistica</span></a>
+    </li>
+    <li class="nav-item active">
+        <a class="nav-link" href="#">
+            <i class="fas fa-map-marked-alt"></i>
+            <span>Ventas</span></a>
+    </li>
       <!-- Divider -->
       <hr class="sidebar-divider">
 
@@ -49,7 +71,26 @@
       <div class="sidebar-heading">
           Opciones
       </div>
-
+      <li class="nav-item active">
+        <a class="nav-link" href="#">
+            <i class="fas fa-map-marked-alt"></i>
+            <span>Permisos</span></a>
+    </li>
+    <li class="nav-item active">
+        <a class="nav-link" href="#">
+            <i class="fas fa-map-marked-alt"></i>
+            <span>Soporte</span></a>
+    </li>
+    <li class="nav-item active">
+        <a class="nav-link" href="#">
+            <i class="fas fa-map-marked-alt"></i>
+            <span>Manterimiento</span></a>
+    </li>
+    <li class="nav-item active">
+        <a class="nav-link" href="#">
+            <i class="fas fa-map-marked-alt"></i>
+            <span>Ayuda</span></a>
+    </li>
       <li class="nav-item active">
         <a class="nav-link" href="{{ route('logOut') }}">
             <i class="fas fa-sign-out-alt"></i>
