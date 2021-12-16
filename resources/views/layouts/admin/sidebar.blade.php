@@ -32,7 +32,7 @@
     </li>
 
     <li class="nav-item active">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="{{ route('punto.index') }}">
             <i class="fas fa-store-alt"></i>
             <span>Punto de parking</span></a>
     </li>

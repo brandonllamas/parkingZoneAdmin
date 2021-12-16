@@ -9,24 +9,24 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
 
-class ClientController extends Controller
+class PuntoParkingController extends Controller
 {
     //
-
     public function index(Request $request)
     {
         # code...
-        $clientes = User::where('profile',4)
+        $clientes = User::where('profile',3)
+        ->whereIn('state',[1,2])
         ->paginate(10);
-
-        return view('admin.clients.index',compact('clientes'));
+        // dd($clientes[0]->getDetalle);
+        return view('admin.parkingpoint.index',compact('clientes'));
     }
 
 
     public function create()
     {
         # code...
-        return view('admin.clients.create');
+        return view('admin.parkingpoint.create');
     }
 
     public function edit(Request $request)

@@ -1,9 +1,9 @@
 @extends('layouts.admin.index')
 @section('title_pag')
-    Clientes
+    Zonas de parking
 @endsection
 @section('title')
-    <h1 class="h3 mb-0 text-gray-800">Clientes</h1>
+    <h1 class="h3 mb-0 text-gray-800">Zonas de parking</h1>
 
 @endsection
 @section('css')
@@ -52,7 +52,7 @@
     <div class="row mb-3">
         <div class="col-11"></div>
         <div class="col">
-            <a href="{{ route('cliente.create') }}" class="btn btn-primary">+</a>
+            <a href="{{ route('punto.create') }}" class="btn btn-primary">+</a>
         </div>
     </div>
 
@@ -68,9 +68,9 @@
                         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                             <thead>
                                 <tr>
-                                    <th>Dni</th>
-                                    <th>Nombre</th>
-                                    <th>Apellido</th>
+                                    <th>Foto</th>
+                                    <th>Nombre Parking</th>
+                                    <th>direction</th>
                                     <th>Correo</th>
                                     <th>Estado</th>
                                     <th>Accion</th>
@@ -79,9 +79,9 @@
                             <tbody>
                                 @foreach ($clientes as $key => $item)
                                     <tr>
-                                        <td>{{ $item->dni }}</td>
-                                        <td>{{ $item->name }}</td>
-                                        <td>{{ $item->lastname }}</td>
+                                        <td>#</td>
+                                        <td>{{ $item->getDetalle->name_parking }}</td>
+                                        <td>{{ $item->getDetalle->direction  }}</td>
                                         <td>{{ $item->email }}</td>
                                         <td>
                                             <form action="{{ route('cliente.create.activate') }}" method="post">

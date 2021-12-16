@@ -16,7 +16,9 @@ class PuntoParkinh extends Migration
 
         Schema::create('tienda', function (Blueprint $table) {
             $table->id('id');
-            $table->string('name_parking');
+            $table->string('id_user');
+            $table->string('name_parking')->nullable();
+            $table->string('photo_parking')->nullable();
             $table->string('cellphoneparking')->nullable();
             $table->string('direction')->nullable();
             $table->string('coordinate_x');

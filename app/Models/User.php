@@ -41,4 +41,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function getDetalle()
+    {
+        return $this->hasOne(tienda::class, 'id_user', 'id');
+    }
+
 }
